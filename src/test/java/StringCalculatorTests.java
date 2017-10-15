@@ -29,6 +29,7 @@ public class StringCalculatorTests {
         int r = sc.Add(numbers);
         Assert.assertEquals(3, r);
     }
+
     @Test
     public void TestAdd10NumberString() {
         StringCalculator sc = new StringCalculator();
@@ -38,5 +39,13 @@ public class StringCalculatorTests {
         Assert.assertEquals(43383, r);
     }
 
+    @Test
+    public void TestAddWithNewlineAsDelimiterString() {
+        StringCalculator sc = new StringCalculator();
+        String numbers = "1,22\n32,23,342,3242\n32425,5234\n829,1233";
+
+        int r = sc.Add(numbers);
+        Assert.assertEquals(43383, r);
+    }
 
 }
