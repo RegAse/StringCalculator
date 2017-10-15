@@ -58,4 +58,13 @@ public class StringCalculatorTests {
         int r = sc.Add(numbers);
     }
 
+    @Test
+    public void TestAddWithSemicolonAsDelimiterString() throws Exception  {
+        StringCalculator sc = new StringCalculator();
+        String numbers = "//;\\1;22;32;23;342;3242;32425;5234;829;1233";
+
+        int r = sc.Add(numbers);
+        Assert.assertEquals(1249, r);
+    }
+
 }
