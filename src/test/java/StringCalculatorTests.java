@@ -38,7 +38,7 @@ public class StringCalculatorTests {
         String numbers = "1,22,32,23,342,3242,32425,5234,829,1233";
 
         int r = sc.Add(numbers);
-        Assert.assertEquals(43383, r);
+        Assert.assertEquals(1249, r);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class StringCalculatorTests {
         String numbers = "1,22\n32,23,342,3242\n32425,5234\n829,1233";
 
         int r = sc.Add(numbers);
-        Assert.assertEquals(43383, r);
+        Assert.assertEquals(1249, r);
     }
 
     @Test(expected = Exception.class)

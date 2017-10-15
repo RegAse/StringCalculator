@@ -16,7 +16,9 @@ public class StringCalculator {
                     hasNegativeStr += val;
                 }
 
-                sum += val;
+                if (val <= 1000) {
+                    sum += val;
+                }
             }
         }
         if (hasNegativeStr != "") {
